@@ -11,8 +11,7 @@ Stove PC SDK는 이하 PCSDK로 표현합니다.
 
 ## Stove PC Client 와 연동하기 위한 사전 준비
 ### [PC Client 다운로드](https://www.onstove.com/ko/download/)를 설치하세요.
-   - Sandbox의 기본 설치위치 : c:\\smilegate\\STOVEGATE8
-   - Live 기본 설치위치 : c:\\smilegate\\STOVE
+   - Live 기본 설치위치 : C:\ProgramData\Smilegate\STOVE
    
 
 ### [PCSDK](https://stoveindie.notion.site/STOVE-PC-SDK-3d7e6a5a95784b69b83efd1e79ba701b)를 다운로드 받으세요.

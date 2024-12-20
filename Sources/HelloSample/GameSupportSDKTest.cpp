@@ -4,13 +4,13 @@
 #pragma region Callbacks
 
 void OnOwnershipListCallback(const Stove::PCSDK::CallbackResult callbackResult,
-                             Stove::PCSDK::Ownership::StovePCOwnership* ownerships,
-                             uint32_t ownershipSize)
+    Stove::PCSDK::Ownership::StovePCOwnership* ownerships,
+    uint32_t ownershipSize)
 {
     PrintStoveAPICallbackResult(L"Ownership_OwnershipList", &callbackResult);
-    
+
     if (callbackResult.result.GetResultCode() == (uint32_t)Stove::PCSDK::Ownership::SDKResultCode::SUCCESS)
-    {        
+    {
         for (uint32_t i = 0; i < ownershipSize; i++)
             PrintStoveOwnership(&ownerships[i]);
 

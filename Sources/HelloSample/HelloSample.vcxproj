@@ -129,22 +129,21 @@ copy "$(ProjectDir)..\..\Depends\StovePCSDK\ViewSDK\Deploy\Bin\$(Platform)\Relea
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>IMGUI_DEFINE_MATH_OPERATORS;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\..\Depends;$(ProjectDir)..\..\Depends\imgui;$(ProjectDir)..\..\Depends\StovePCSDK;$(ProjectDir)..\..\Depends\StovePCSDK\BaseSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\GameSupportSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\GamingServicesSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\IAPSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\OwnershipSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\PCBangSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\ViewSDK\Deploy\include;$(ProjectDir)..\..\Depends\StoveSignatureVerifier\Deploy\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\..\Depends;$(ProjectDir)..\..\Depends\imgui;$(ProjectDir)..\..\Depends\StovePCSDK;$(ProjectDir)..\..\Depends\StovePCSDK\BaseSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\GameSupportSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\IAPSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\OwnershipSDK\Deploy\include;$(ProjectDir)..\..\Depends\StovePCSDK\PCBangSDK\Deploy\include;$(ProjectDir)..\..\Depends\StoveSignatureVerifier\Deploy\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(DXSDK_DIR)/Lib/$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;$(ProjectDir)..\..\Depends\StovePCSDK\BaseSDK\Deploy\Lib\$(Platform)\Release\BaseSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\GameSupportSDK\Deploy\Lib\$(Platform)\Release\GameSupportSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\GamingServicesSDK\Deploy\Lib\$(Platform)\Release\GamingServicesSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\IAPSDK\Deploy\Lib\$(Platform)\Release\IAPSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\OwnershipSDK\Deploy\Lib\$(Platform)\Release\OwnershipSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\PCBangSDK\Deploy\Lib\$(Platform)\Release\PCBangSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\ViewSDK\Deploy\Lib\$(Platform)\Release\ViewSDK.lib;$(ProjectDir)..\..\Depends\StoveSignatureVerifier\Deploy\Lib\$(Platform)\Release\StoveSignatureVerifier.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;$(ProjectDir)..\..\Depends\StovePCSDK\BaseSDK\Deploy\Lib\$(Platform)\Release\BaseSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\GameSupportSDK\Deploy\Lib\$(Platform)\Release\GameSupportSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\IAPSDK\Deploy\Lib\$(Platform)\Release\IAPSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\OwnershipSDK\Deploy\Lib\$(Platform)\Release\OwnershipSDK.lib;$(ProjectDir)..\..\Depends\StovePCSDK\PCBangSDK\Deploy\Lib\$(Platform)\Release\PCBangSDK.lib;$(ProjectDir)..\..\Depends\\StoveSignatureVerifier\Deploy\Lib\$(Platform)\Release\StoveSignatureVerifier.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "$(ProjectDir)..\..\Depends\StovePCSDK\BaseSDK\Deploy\Bin\$(Platform)\Release\*.dll" $(OutDir)
 copy "$(ProjectDir)..\..\Depends\StovePCSDK\GameSupportSDK\Deploy\Bin\$(Platform)\Release\*.dll" $(OutDir)
-copy "$(ProjectDir)..\..\Depends\StovePCSDK\GamingServicesSDK\Deploy\Bin\$(Platform)\Release\*.dll" $(OutDir)
 copy "$(ProjectDir)..\..\Depends\StovePCSDK\IAPSDK\Deploy\Bin\$(Platform)\Release\*.dll" $(OutDir)
 copy "$(ProjectDir)..\..\Depends\StovePCSDK\OwnershipSDK\Deploy\Bin\$(Platform)\Release\*.dll" $(OutDir)
 copy "$(ProjectDir)..\..\Depends\StovePCSDK\PCBangSDK\Deploy\Bin\$(Platform)\Release\*.dll" $(OutDir)
-copy "$(ProjectDir)..\..\Depends\StovePCSDK\ViewSDK\Deploy\Bin\$(Platform)\Release\*.dll" $(OutDir)</Command>
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
